@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --branco: #FFFFFF;
+    --bg-escuro: #c6c6b6;
+    --bg-medio: #d6d6c9;
+    --bg-claro: #dfdfd5;
+    --cinza-escuro: #626868;
+
+    --cor-fonte-escuro: #403f3f;
+    --cor-fonte-claro: #7c8666;
+    --fonte-montserrat: "Montserrat", sans-serif; /*font-weight: <300 -light, 400-regular> */
+    --fonte-play: "Playfair Display", serif;
+
+}
+
+/* GERAL */
+body{
+    background-color: var(--branco);
+    font-family: var(--fonte-montserrat);
+}
+
+/* HEADER */
+#header{
+    background-color: var(--bg-escuro);
+    padding: 0.1rem;
+}
+
+h1{
+    font-family: var(--fonte-play);
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--cor-fonte-escuro);
+    padding-left: 2rem;
+}
+
+/* BACKGROUND*/
+#retangulo-background{
+    position: fixed;
+    top: 0;
+    width: 18rem;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--cinza-escuro);
+}
+
+#retangulo-footer{
+    position: fixed;
+    bottom: 0;
+    left: 18rem;
+    width: 100%;
+    height: 18rem;
+    z-index: -1;
+    background-color: var(--bg-escuro);
+}
+
+
+#imagem-jessica{
+    width: 15rem;
+
+}
+
+nav menu{
+    display: flex;
+    flex-flow: column;
+}
+
