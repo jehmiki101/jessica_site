@@ -38,8 +38,45 @@
             </ul>
         </nav>
 
-            
-        
+        <!-- MENU SOBREMIM -->
+        <nav>
+            <ul>
+                <li><button id="sub-sobre-mim">Sobre Mim</button></li>
+                <li><a id="sub-experiencia">Experiência</a></li>
+                <li><a id="sub-competencias-habilidades">Competências e Habilidades</a></li>
+            </ul>
+        </nav>
+
+        <!-- CONTEÚDO SUB MENU SOBRE MIM -->
+        <div id="content-sobre-mim">
+            <p>Profissional com formação em Arquitetura e quatro anos de  experiência na área, atualmente em transição para Engenharia de  Software. Focada em desenvolvimento de software e na resolução de problemas tecnológicos.</p>
+            <p>enho grande aptidão para o aprendizado autodirigido, lógica de  programação e pensamento analítico, além de forte interesse em  contribuir com soluções inovadoras na área de TI. Busco oportunidades para aplicar meus conhecimentos e crescer profissionalmente no setor.</p>
+
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            // declaração sub menu
+            const sobreMim = document.getElementById("sub-sobre-mim");
+            const experiencia = document.getElementById("sub-experiencia");
+            const compHabilidades = document.getElementById("sub-competencias-habilidades");
+            // declaração conteudos
+            const contentSobreMim = document.getElementById("content-sobre-mim");
+
+            // minimizar conteúdos
+            contentSobreMim.style.display = "none";
+
+            // evento clicável
+            sobreMim.addEventListener('click', function(){
+                if (contentSobreMim.style.display === "none"){
+                    contentSobreMim.style.display = "block";
+                }
+                else{
+                    contentSobreMim.style.display = 'none';
+                }
+            });
+
+        </script>
     </body>
     <footer>
         <div id="retangulo-footer"></div>
