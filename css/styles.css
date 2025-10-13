@@ -18,6 +18,7 @@
 
 }
 
+@media screen and (min-width:601px){
 /* GERAL */
 body{
     background-color: var(--branco);
@@ -27,9 +28,9 @@ body{
 /* HEADER */
 #header{
     background-color: var(--bg-claro);
-    padding: 0.1rem;
+    padding: 1rem;
     font-family: var(--fonte-play);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--cor-fonte-escuro);
     padding-left: 2rem;
@@ -56,10 +57,6 @@ body{
 }
 
 
-#imagem-jessica{
-    width: 15rem;
-
-}
 
 /* MENU */
 #nav-menu{
@@ -87,4 +84,10 @@ a:visited{
     text-decoration: none;
     color: var(--cor-fonte-claro);
     font-family: var(--fonte-montserrat);
+}
+
+}
+
+@media screen and (max-width:600px) {
+
 }

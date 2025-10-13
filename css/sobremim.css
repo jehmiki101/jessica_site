@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --branco: #FFFFFF;
+    --bg-escuro: #c6c6b6;
+    --bg-medio: #d6d6c9;
+    --bg-claro: #dfdfd5;
+    --cinza-escuro: #626868;
+
+    --cor-fonte-escuro: #403f3f;
+    --cor-fonte-claro: #7c8666;
+    --fonte-montserrat: "Montserrat", sans-serif; /*font-weight: <300 -light, 400-regular> */
+    --fonte-play: "Playfair Display", serif;
+
+}
+
+@media screen and (min-width:601px){
+#sub-sobre-mim, #sub-experiencia, #sub-competencias-habilidades{
+    display: block;
+    width: 10rem;
+    text-decoration: none;
+    background-color: var(--bg-medio);
+    margin-left: 30rem;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+
+    font-family: var(--fonte-play);
+    color: var(--cor-fonte-escuro);
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+#menu-sobremim{
+    color: var(--cor-fonte-escuro);
+}
+
+}
+
