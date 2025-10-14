@@ -19,13 +19,24 @@
 }
 
 @media screen and (min-width:601px){
-#sub-sobre-mim, #sub-experiencia, #sub-competencias-habilidades{
-    display: block;
+#sub-geral{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 30rem;
+    top: 11.5rem;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+#sub-sobremim, #sub-experiencia, #sub-competencias-habilidades{
+    display: flex;
     width: 10rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     background-color: var(--bg-medio);
-    margin-left: 30rem;
-    margin-bottom: 1rem;
     padding: 0.7rem;
 
     font-family: var(--fonte-play);
@@ -33,10 +44,40 @@
     font-weight: 600;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
+    text-align: center;
+
 }
 
+/* CONTEÚDO E MENU SOBRE MIM */
 #menu-sobremim{
+    font-family: var(--fonte-montserrat);
     color: var(--cor-fonte-escuro);
+    width: 100%;
+}
+
+#content-sobre-mim{
+    display: flex;
+    position: fixed;
+    left: 30rem;
+    top: 14rem;
+    height: 30rem;
+    background: var(--bg-escuro);
+    padding: 4rem 18rem 0 2rem;
+    margin-right: 20rem;
+
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    text-indent: 2rem;
+    letter-spacing: 0.05rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+#imagem-jessica {
+    width: 20rem;
+
 }
 
 }

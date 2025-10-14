@@ -20,6 +20,7 @@
             <h1>Jéssica Uchiyama</h1>
         </header>
         <div id="retangulo-background"></div>
+        <div id="retangulo-content"></div>
 
         <!-- MENU -->
         <nav id="nav-menu">
@@ -36,13 +37,16 @@
                 <li>
                     <a id="menu-contato" href="contato.html">Contato</a>
                 </li>
+                <li>
+                    <a id="menu-inicial" href="index.html">Menu</a>
+                </li>
             </ul>
         </nav>
 
         <!-- MENU SOBREMIM -->
         <nav>
-            <ul>
-                <li><a id="sub-sobre-mim">Sobre Mim</a></li>
+            <ul id="sub-geral">
+                <li><a id="sub-sobremim">Sobre Mim</a></li>
                 <li><a id="sub-experiencia">Experiência</a></li>
                 <li><a id="sub-competencias-habilidades">Competências e Habilidades</a></li>
             </ul>
@@ -50,15 +54,15 @@
 
         <!-- CONTEÚDO SUB MENU SOBRE MIM -->
         <div id="content-sobre-mim">
-            <p>Profissional com formação em Arquitetura e quatro anos de  experiência na área, atualmente em transição para Engenharia de  Software. Focada em desenvolvimento de software e na resolução de problemas tecnológicos.</p>
-            <p>enho grande aptidão para o aprendizado autodirigido, lógica de  programação e pensamento analítico, além de forte interesse em  contribuir com soluções inovadoras na área de TI. Busco oportunidades para aplicar meus conhecimentos e crescer profissionalmente no setor.</p>
-
+            <p>    Profissional com formação em Arquitetura e quatro anos de  experiência na área, atualmente em transição para Engenharia de  Software. Focada em desenvolvimento de software e na resolução de problemas tecnológicos.</p>
+            <p>    Tenho grande aptidão para o aprendizado autodirigido, lógica de  programação e pensamento analítico, além de forte interesse em  contribuir com soluções inovadoras na área de TI. Busco oportunidades para aplicar meus conhecimentos e crescer profissionalmente no setor.</p>
         </div>
+
 
         <!-- JAVASCRIPT -->
         <script>
             // declaração sub menu
-            const sobreMim = document.getElementById("sub-sobre-mim");
+            const sobreMim = document.getElementById("sub-sobremim");
             const experiencia = document.getElementById("sub-experiencia");
             const compHabilidades = document.getElementById("sub-competencias-habilidades");
             // declaração conteudos
@@ -67,13 +71,15 @@
             // minimizar conteúdos
             contentSobreMim.style.display = "none";
 
-            // evento clicável
-            sobreMim.addEventListener('click', function(){
+            // evento clicável sobremim
+            sobreMim.addEventListener("click", function(){
                 if (contentSobreMim.style.display === "none"){
                     contentSobreMim.style.display = "block";
+                    sobreMim.style.background = "#c6c6b6";
                 }
                 else{
-                    contentSobreMim.style.display = 'none';
+                    contentSobreMim.style.display = "none";
+                    sobreMim.style.background = "#d6d6c9";
                 }
             });
 

@@ -58,6 +58,7 @@ body{
 
 
 
+
 /* MENU */
 #nav-menu{
     margin-top: 3rem;
@@ -70,9 +71,10 @@ li{
     font-size: 1rem;
 }
 
-#menu-sobremim, #menu-formacao, #menu-portfolio, #menu-contato{
+#menu-sobremim, #menu-formacao, #menu-portfolio, #menu-contato, #menu-inicial{
     display: block;
     width: 20rem;
+    height: 2.5rem;
     text-decoration: none;
     background-color: var(--bg-claro);
     margin-left: 6rem;
