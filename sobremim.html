@@ -26,6 +26,9 @@
         <nav id="nav-menu">
             <ul>
                 <li>
+                    <a id="menu-inicial" href="index.html">Menu</a>
+                </li>
+                <li>
                     <a id="menu-sobremim" href="sobremim.html">Sobre Mim</a>
                 </li>
                 <li>
@@ -37,9 +40,7 @@
                 <li>
                     <a id="menu-contato" href="contato.html">Contato</a>
                 </li>
-                <li>
-                    <a id="menu-inicial" href="index.html">Menu</a>
-                </li>
+
             </ul>
         </nav>
 
@@ -57,6 +58,31 @@
             <p>    Profissional com formação em Arquitetura e quatro anos de  experiência na área, atualmente em transição para Engenharia de  Software. Focada em desenvolvimento de software e na resolução de problemas tecnológicos.</p>
             <p>    Tenho grande aptidão para o aprendizado autodirigido, lógica de  programação e pensamento analítico, além de forte interesse em  contribuir com soluções inovadoras na área de TI. Busco oportunidades para aplicar meus conhecimentos e crescer profissionalmente no setor.</p>
         </div>
+        <!-- CONTEÚDO EXPERIÊNCIA -->
+        <div id="content-ex">
+            <ul>
+                <li id="content-ex-data">Fevereiro de 2020 a 2023</li>
+            </ul>
+            <p id="content-ex-titulo">Escritório Frezza e Figueiredo</p>
+            <p id="content-ex-subtitulo">Arquiteta</p>
+            <ul>
+                <li class="content-ex-content">Gerenciei clientes e fornecedores, alinhando requisitos à execução dos projetos e aprimorando minha compreensão das necessidades dos usuários.</li>
+                <li class="content-ex-content">Realizei visitas técnicas, garantindo conformidade com os projetos e desenvolvendo atenção aos detalhes e solução de problemas.</li>
+                <li class="content-ex-content"> Desenvolvi projetos multidisciplinares e modelos 3D para obras residenciais e comerciais, fortalecendo meu entendimento de design e experiência do usuário.</li>
+            </ul>
+        </div>
+        <!-- CONTEÚDO COMPETÊNCIAS E HABILIDADES -->
+        <div id="content-comp">
+            <ul>
+                <li class="content-comp-content">Pensamento crítico e analítico</li>
+                <li class="content-comp-content">Comunicação clara e objetiva</li>
+                <li class="content-comp-content">Atenção aos detalhes</li>
+                <li class="content-comp-content"> Trabalho em equipe</li>
+                <li class="content-comp-content">Gestão de tempo e organização</li>
+                <li class="content-comp-content">Paciência e resiliência</li>
+            </ul>
+        </div>
+
 
 
         <!-- JAVASCRIPT -->
@@ -65,15 +91,30 @@
             const sobreMim = document.getElementById("sub-sobremim");
             const experiencia = document.getElementById("sub-experiencia");
             const compHabilidades = document.getElementById("sub-competencias-habilidades");
+            const infoPessoais = document.getElementById("sub-info-pessoais");
+
             // declaração conteudos
             const contentSobreMim = document.getElementById("content-sobre-mim");
+            const contentEx = document.getElementById("content-ex");
+            const contentComp = document.getElementById("content-comp");
 
             // minimizar conteúdos
-            contentSobreMim.style.display = "none";
+            function esconderTodos(){
+                contentSobreMim.style.display = "none";
+                contentEx.style.display = "none";
+                contentComp.style.display = "none";
+
+                sobreMim.style.background = "#d6d6c9";
+                experiencia.style.background = "#d6d6c9";
+                compHabilidades.style.background = "#d6d6c9";
+            }
+            esconderTodos();
 
             // evento clicável sobremim
             sobreMim.addEventListener("click", function(){
-                if (contentSobreMim.style.display === "none"){
+                const aberto = contentSobreMim.style.display === "block";
+                esconderTodos();
+                if (!aberto){
                     contentSobreMim.style.display = "block";
                     sobreMim.style.background = "#c6c6b6";
                 }
@@ -82,6 +123,33 @@
                     sobreMim.style.background = "#d6d6c9";
                 }
             });
+            // evento clicável experiência
+            experiencia.addEventListener("click", function(){
+                const aberto = contentEx.style.display === "block";
+                esconderTodos();
+                if (!aberto){
+                    contentEx.style.display = "block";
+                    experiencia.style.background = "#c6c6b6";
+                }
+                else{
+                    contentEx.style.display = "none";
+                    experiencia.style.background = "#d6d6c9";
+                }
+            });
+            // evento clicável competências e habilidades
+            compHabilidades.addEventListener("click", function(){
+                const aberto = contentComp.style.display === "block";
+                esconderTodos();
+                if (!aberto){
+                    contentComp.style.display = "block";
+                    compHabilidades.style.background = "#c6c6b6";
+                }
+                else{
+                    contentComp.style.display = "none";
+                    compHabilidades.style.background = "#d6d6c9";
+                }
+            });
+            // evento clicável informações pessoais
 
         </script>
     </body>

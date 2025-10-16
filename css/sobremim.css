@@ -19,16 +19,18 @@
 }
 
 @media screen and (min-width:601px){
+/* SUBMENU GERAL */
 #sub-geral{
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     left: 30rem;
-    top: 11.5rem;
+    top: 15rem;
     gap: 1rem;
     list-style-type: none;
 }
 
+/* ABAS SUBMENU */
 #sub-sobremim, #sub-experiencia, #sub-competencias-habilidades{
     display: flex;
     width: 10rem;
@@ -38,6 +40,7 @@
     text-decoration: none;
     background-color: var(--bg-medio);
     padding: 0.7rem;
+    cursor: pointer;
 
     font-family: var(--fonte-play);
     color: var(--cor-fonte-escuro);
@@ -48,6 +51,14 @@
 
 }
 
+/* IMAGEM JESSICA */
+#imagem-jessica {
+    width: 20rem;
+    position: absolute;
+    left: 70rem;
+
+}
+
 /* CONTEÚDO E MENU SOBRE MIM */
 #menu-sobremim{
     font-family: var(--fonte-montserrat);
@@ -55,12 +66,14 @@
     width: 100%;
 }
 
+/* CONTEÚDO SOBRE MIM */
 #content-sobre-mim{
     display: flex;
-    position: fixed;
+    position: absolute;
     left: 30rem;
-    top: 14rem;
+    top: 17.5rem;
     height: 30rem;
+    width: 50rem;
     background: var(--bg-escuro);
     padding: 4rem 18rem 0 2rem;
     margin-right: 20rem;
@@ -75,10 +88,83 @@
     line-height: 1.5rem;
 }
 
-#imagem-jessica {
-    width: 20rem;
+/* CONTEÚDO EXPERIÊNCIA */
+#content-ex{
+    display: flex;
+    position: absolute;
+    left: 30rem;
+    top: 17.5rem;
+    height: 30rem;
+    width: 50rem;
+    background: var(--bg-escuro);
+    padding: 4rem 18rem 0 2rem;
+    margin-right: 20rem;
 
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-fonte-escuro);
 }
 
+#content-ex-data{
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#content-ex-titulo{
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: justify;
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#content-ex-subtitulo{
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+.content-ex-content{
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-left: 3rem;
+}
+/* CONTEÚDO COMPETÊNCIAS E HABILIDADES */
+#content-comp{
+    display: flex;
+    position: absolute;
+    left: 30rem;
+    top: 17.5rem;
+    height: 30rem;
+    width: 50rem;
+    background: var(--bg-escuro);
+    padding: 4rem 18rem 0 2rem;
+    margin-right: 20rem;
+
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-fonte-escuro);
+}
+
+.content-comp-content{
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-left: 3rem;
+}
 }
 
