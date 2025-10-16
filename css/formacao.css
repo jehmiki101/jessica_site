@@ -20,18 +20,18 @@
 
 @media screen and (min-width:601px){
 /* SUBMENU GERAL */
-#sub-geral-sobremim{
+#sub-geral-formacao{
     display: flex;
     flex-direction: row;
     position: absolute;
     left: 30rem;
-    top: 15rem;
+    top: 18.5rem;
     gap: 1rem;
     list-style-type: none;
 }
 
 /* ABAS SUBMENU */
-#sub-sobremim, #sub-experiencia, #sub-competencias-habilidades{
+#sub-certificacoes, #sub-formacao, #sub-ferramentas-plataformas{
     display: flex;
     width: 10rem;
     height: 2.5rem;
@@ -51,120 +51,133 @@
 
 }
 
-/* IMAGEM JESSICA */
-#imagem-jessica {
-    width: 20rem;
-    position: absolute;
-    left: 70rem;
-
-}
-
-/* MENU SOBRE MIM */
-#menu-sobremim{
+/* MENU FORMAÇÃO */
+#menu-formacao{
     font-family: var(--fonte-montserrat);
     color: var(--cor-fonte-escuro);
     width: 100%;
 }
 
-/* CONTEÚDO SOBRE MIM */
-#content-sobre-mim{
+/* CONTEÚDO CERTIFICAÇÕES */
+#content-certificacao{
     display: flex;
     position: absolute;
     left: 30rem;
-    top: 17.5rem;
+    top: 20.9rem;
     height: 30rem;
     width: 50rem;
     background: var(--bg-escuro);
-    padding: 4rem 18rem 0 2rem;
+    padding: 4rem 10rem 0 2rem;
     margin-right: 20rem;
 
     font-family: var(--fonte-montserrat);
     color: var(--cor-fonte-escuro);
     font-weight: 500;
     font-size: 1rem;
-    text-indent: 2rem;
-    letter-spacing: 0.05rem;
     text-align: justify;
-    line-height: 1.5rem;
 }
 
-/* CONTEÚDO EXPERIÊNCIA */
-#content-ex{
-    display: flex;
-    position: absolute;
-    left: 30rem;
-    top: 17.5rem;
-    height: 30rem;
-    width: 50rem;
-    background: var(--bg-escuro);
-    padding: 4rem 18rem 0 2rem;
-    margin-right: 20rem;
-
-    font-family: var(--fonte-montserrat);
-    color: var(--cor-fonte-escuro);
-}
-
-#content-ex-data{
-    color: var(--cor-fonte-escuro);
-    font-weight: 500;
-    font-size: 1rem;
-    text-align: justify;
-    list-style-type: none;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-#content-ex-titulo{
+.content-cert-titulo{
     color: var(--cor-fonte-escuro);
     font-weight: 600;
     font-size: 1.5rem;
     text-align: justify;
-    list-style-type: none;
     padding-left: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
+
 }
 
-#content-ex-subtitulo{
+.content-cert-subtitulo{
     color: var(--cor-fonte-escuro);
     font-weight: 600;
     font-size: 1rem;
     text-align: justify;
     padding-left: 1rem;
-    margin-bottom: 1rem;
-    list-style-type: none;
+    margin-bottom: -1rem;
 }
 
-.content-ex-content{
+.content-cert-content{
     color: var(--cor-fonte-escuro);
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.5rem;
     text-align: justify;
-    margin-left: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
 }
-/* CONTEÚDO COMPETÊNCIAS E HABILIDADES */
-#content-comp{
+
+/* CONTEÚDO FORMAÇÃO */
+#content-formacao{
     display: flex;
     position: absolute;
     left: 30rem;
-    top: 17.5rem;
+    top: 20.9rem;
     height: 30rem;
     width: 50rem;
     background: var(--bg-escuro);
-    padding: 4rem 18rem 0 2rem;
+    padding: 4rem 10rem 0 2rem;
     margin-right: 20rem;
 
     font-family: var(--fonte-montserrat);
     color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
 }
 
-.content-comp-content{
+.content-for-titulo{
+    color: var(--cor-fonte-escuro);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
+
+}
+
+.content-for-subtitulo{
+    color: var(--cor-fonte-escuro);
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
+}
+
+.content-for-content{
     color: var(--cor-fonte-escuro);
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.5rem;
     text-align: justify;
-    margin-left: 3rem;
-}
+    padding-left: 1rem;
 }
 
+/* CONTEÚDO FERRAMENTAS E PLATAFORMAS */
+#content-ferr-plat{
+    display: flex;
+    position: absolute;
+    left: 30rem;
+    top: 20.9rem;
+    height: 30rem;
+    width: 50rem;
+    background: var(--bg-escuro);
+    padding: 4rem 10rem 0 2rem;
+    margin-right: 20rem;
+
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.content-ferrPlat-content{
+    color: var(--cor-fonte-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 0.7rem;
+    margin-left: 2rem;
+
+}
+
+}
