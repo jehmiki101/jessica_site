@@ -19,19 +19,19 @@
 }
 
 @media screen and (min-width:601px){
-/* SUBMENU FORMAÇÃO */
-#sub-geral-formacao{
+/* SUBMENU PORTFOLIO */
+#sub-geral-portfolio{
     display: flex;
     flex-direction: row;
     position: absolute;
     left: 30rem;
-    top: 18.5rem;
+    top: 22rem;
     gap: 1rem;
     list-style-type: none;
 }
 
 /* ABAS SUBMENU */
-#sub-certificacoes, #sub-formacao, #sub-ferramentas-plataformas, #sub-idiomas{
+#sub-github, #sub-projetos{
     display: flex;
     width: 10rem;
     height: 2.5rem;
@@ -52,7 +52,7 @@
 }
 
 /* MENU FORMAÇÃO */
-#menu-formacao{
+#menu-portfolio{
     font-family: var(--fonte-montserrat);
     color: var(--cor-fonte-escuro);
     width: 100%;
@@ -60,11 +60,11 @@
 
 
 /* CONTEÚDO FORMAÇÕES */
-#content-certificacao, #content-ferr-plat, #content-formacao, #content-idiomas{
+#content-github, #content-projetos{
     display: flex;
     position: absolute;
     left: 30rem;
-    top: 20.9rem;
+    top: 24.5rem;
     height: 30rem;
     width: 50rem;
     background: var(--bg-escuro);
@@ -94,28 +94,24 @@
     font-size: 1rem;
     text-align: justify;
     padding-left: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: 1rem;
+    
 }
 
-.content-content{
+.content-a-subtitulo{
+    text-decoration: none;
     color: var(--cor-fonte-escuro);
     font-weight: 500;
-    font-size: 1rem;
-    text-align: justify;
-    padding-left: 1rem;
+
 }
 
 
-/* CONTEÚDO FERRAMENTAS E PLATAFORMAS E IDIOMAS*/
-
-.content-li-content{
+a:visited{
+    text-decoration: none;
     color: var(--cor-fonte-escuro);
-    font-weight: 500;
-    font-size: 1rem;
-    text-align: justify;
-    margin-bottom: 0.7rem;
-    margin-left: 2rem;
+    font-family: var(--fonte-montserrat);
+}
+
 
 }
 
-}

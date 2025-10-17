@@ -47,53 +47,62 @@
         <!-- SUBMENU FORMAÇÃO -->
         <nav>
             <ul id="sub-geral-formacao">
+                <li><a id="sub-formacao">Formação Acadêmica</a></li>
                 <li><a id="sub-certificacoes">Certificações</a></li>
-                <li><a id="sub-formacao">Formação</a></li>
                 <li><a id="sub-ferramentas-plataformas">Ferramentas e Plataformas</a></li>
+                <li><a id="sub-idiomas">Idiomas</a></li>
             </ul>
         </nav>
-        <!-- CONTEÚDO CERTIFICAÇÕES -->
-        <div id="content-certificacao">
-            <p class="content-cert-titulo">Bacharelado em Engenharia de Software</p>
-            <br>
-            <p class="content-cert-subtitulo">UNINTER</p>
-            <br>
-            <p class="content-cert-content">Em Curso - previsão de término agosto de 2028</p>
-            <p class="content-cert-titulo">Graduação em Arquitetura e Urbanismo</p>
-            <br>
-            <p class="content-cert-subtitulo">Centro Universitário Barão de Mauá</p>
-        </div>
         <!-- CONTEÚDO FORMAÇÃO -->
         <div id="content-formacao">
-            <p class="content-for-titulo">CS50's Introduction to Databases with SQL</p>
+            <p class="content-titulo">Bacharelado em Engenharia de Software</p>
             <br>
-            <p class="content-for-subtitulo">Harvard</p>
+            <p class="content-subtitulo">UNINTER</p>
             <br>
-            <p class="content-for-content">2025</p>
+            <p class="content-content">Em Curso - previsão de término agosto de 2028</p>
+            <br>
+            <p class="content-titulo">Graduação em Arquitetura e Urbanismo</p>
+            <br>
+            <p class="content-subtitulo">Centro Universitário Barão de Mauá</p>
+        </div>
+        <!-- CONTEÚDO CERTIFICAÇÃO -->
+        <div id="content-certificacao">
+            <p class="content-titulo">CS50's Introduction to Databases with SQL</p>
+            <br>
+            <p class="content-subtitulo">Harvard</p>
+            <br>
+            <p class="content-content">2025</p>
             <br>
 
-            <p class="content-for-titulo">HTML, CSS e C</p>
+            <p class="content-titulo">HTML, CSS e C</p>
             <br>
-            <p class="content-for-subtitulo">Alura</p>
+            <p class="content-subtitulo">Alura</p>
             <br>
-            <p class="content-for-content">2024</p>
+            <p class="content-content">2024</p>
             <br>
-            <p class="content-for-titulo">Trilha Digital - Coders 24 - Front EndL</p>
+            <p class="content-titulo">Trilha Digital - Coders 24 - Front EndL</p>
             <br>
-            <p class="content-for-subtitulo">ADA</p>
+            <p class="content-subtitulo">ADA</p>
             <br>
-            <p class="content-for-content">2024</p>
+            <p class="content-content">2024</p>
             <br>
         </div>
         <!-- CONTEÚDO FERRAMENTAS E PLATAFORMAS -->
         <div id="content-ferr-plat">
             <ul>
-                <li class="content-ferrPlat-content">SQL - sqlite3</li>
-                <li class="content-ferrPlat-content">HTML</li>
-                <li class="content-ferrPlat-content">CSS</li>
-                <li class="content-ferrPlat-content">Python</li>
-                <li class="content-ferrPlat-content">GitHub</li>
-                <li class="content-ferrPlat-content">Figma</li>
+                <li class="content-li-content">SQL - sqlite3</li>
+                <li class="content-li-content">HTML</li>
+                <li class="content-li-content">CSS</li>
+                <li class="content-li-content">Python</li>
+                <li class="content-li-content">GitHub</li>
+                <li class="content-li-content">Figma</li>
+            </ul>
+        </div>
+        <!-- CONTEÚDO IDIOMAS -->
+        <div id="content-idiomas">
+            <ul>
+                <li class="content-li-content">Ingles</li>
+                <li class="content-li-content">Japonês</li>
             </ul>
         </div>
 
@@ -101,40 +110,31 @@
         <!-- JAVASCRIPT -->
         <script>
             // declaração sub menu
-            const certificacao = document.getElementById("sub-certificacoes");
             const formacao = document.getElementById("sub-formacao");
+            const certificacao = document.getElementById("sub-certificacoes");
             const ferrPlat = document.getElementById("sub-ferramentas-plataformas");
+            const idiomas = document.getElementById("sub-idiomas")
 
             // declaração conteúdos
-            const contentCertificacao = document.getElementById("content-certificacao");
             const contentFormacao = document.getElementById("content-formacao");
+            const contentCertificacao = document.getElementById("content-certificacao");
             const contentFerrPlat = document.getElementById("content-ferr-plat");
+            const contentIdiomas = document.getElementById("content-idiomas")
 
             // minimizar conteúdos
             function esconderTodos(){
-                contentCertificacao.style.display = "none";
                 contentFormacao.style.display = "none";
+                contentCertificacao.style.display = "none";
                 contentFerrPlat.style.display = "none";
+                contentIdiomas.style.display = "none";
 
-                certificacao.style.background = "#d6d6c9";
                 formacao.style.background = "#d6d6c9";
+                certificacao.style.background = "#d6d6c9";
                 ferrPlat.style.background = "#d6d6c9";
             }
             esconderTodos();
 
-            // evento clicável Certificações
-            certificacao.addEventListener("click", function(){
-                const aberto = contentCertificacao.style.display === "block";
-                esconderTodos();
-                if (!aberto){
-                    contentCertificacao.style.display = "block";
-                    certificacao.style.background = "#c6c6b6";
-                }
-                else{
-                    contentCertificacao.style.display = "none";
-                    certificacao.style.background = "#d6d6c9";
-                }
-            });
+
             // evento clicável Formação
             formacao.addEventListener("click", function(){
                 const aberto = contentFormacao.style.display === "block";
@@ -146,6 +146,20 @@
                 else{
                     contentFormacao.style.display = "none";
                     formacao.style.background = "#d6d6c9";
+                }
+            });
+            
+            // evento clicável Certificações
+            certificacao.addEventListener("click", function(){
+                const aberto = contentCertificacao.style.display === "block";
+                esconderTodos();
+                if (!aberto){
+                    contentCertificacao.style.display = "block";
+                    certificacao.style.background = "#c6c6b6";
+                }
+                else{
+                    contentCertificacao.style.display = "none";
+                    certificacao.style.background = "#d6d6c9";
                 }
             });
             // evento clicável Ferramentas e plataformas
@@ -161,7 +175,19 @@
                     ferrPlat.style.background = "#d6d6c9";
                 }
             });
-            // evento clicável informações pessoais
+            // evento clicável Idiomas
+            idiomas.addEventListener("click", function(){
+                const aberto = contentIdiomas.style.display === "block";
+                esconderTodos();
+                if (!aberto){
+                    contentIdiomas.style.display = "block";
+                    idiomas.style.background = "#c6c6b6";
+                }
+                else{
+                    contentIdiomas.style.display = "none";
+                    idiomas.style.background = "#d6d6c9";
+                }
+            });
 
         </script>
 

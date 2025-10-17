@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -57,9 +58,6 @@ body{
     background-color: var(--bg-claro);
 }
 
-
-
-
 /* MENU */
 #nav-menu{
     margin-top: 3rem;
@@ -78,6 +76,7 @@ li{
     height: 2.5rem;
     text-decoration: none;
     background-color: var(--bg-claro);
+    color: var(--cor-fonte-claro);
     margin-left: 6rem;
     margin-bottom: 1rem;
     padding: 0.7rem;
