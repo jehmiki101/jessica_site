@@ -26,7 +26,7 @@
         <nav id="nav-menu">
             <ul>
                 <li>
-                    <a id="menu-inicial" href="index.html">Menu</a>
+                    <a id="menu-inicial" href="index.html">Apresentação</a>
                 </li>
                 <li>
                     <a id="menu-sobremim" href="sobremim.html">Sobre Mim</a>
@@ -60,9 +60,9 @@
         </div>
         <!-- CONTEÚDO EXPERIÊNCIA -->
         <div id="content-ex">
-            <ul>
-                <li id="content-ex-data">Fevereiro de 2020 a 2023</li>
-            </ul>
+
+            <p id="content-ex-data">Fevereiro de 2020 a 2023</p>
+            <br>
             <p id="content-ex-titulo">Escritório Frezza e Figueiredo</p>
             <p id="content-ex-subtitulo">Arquiteta</p>
             <ul>
@@ -108,6 +108,8 @@
                 compHabilidades.style.background = "#d6d6c9";
             }
             esconderTodos();
+            contentSobreMim.style.display = "block";
+            sobreMim.style.background = "#c6c6b6";
 
             // evento clicável sobremim
             sobreMim.addEventListener("click", function(){

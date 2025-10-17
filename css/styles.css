@@ -88,61 +88,13 @@ a:visited{
     font-family: var(--fonte-montserrat);
 }
 
-}
-
-/* INFORMAÇÕES PESSOAIS */
-#sub-geral{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 30rem;
-    top: 11.5rem;
-    gap: 1rem;
-    list-style-type: none;
-}
-
-#sub-info-pessoais{
-    display: flex;
-    width: 10rem;
-    height: 2.5rem;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: var(--bg-escuro);
-    padding: 0.7rem;
-    cursor: pointer;
-
-    font-family: var(--fonte-play);
+/* FONTE CONTENT TÍTULO */
+.content-titulo{
     color: var(--cor-fonte-escuro);
     font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
-    text-align: center;
-
-}
-
-
-#content-info-pessoais{
-    display: flex;
-    position: absolute;
-    left: 30rem;
-    top: 14rem;
-    height: 30rem;
-    width: 50rem;
-    background: var(--bg-escuro);
-    padding: 4rem 18rem 0 2rem;
-    margin-right: 20rem;
-
-    font-family: var(--fonte-montserrat);
-    color: var(--cor-fonte-escuro);
-    font-weight: 500;
-    font-size: 1rem;
-    text-indent: 2rem;
-    letter-spacing: 0.05rem;
+    font-size: 1.5rem;
     text-align: justify;
-    line-height: 1.5rem;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
 }
-
-@media screen and (max-width:600px) {
-
 }

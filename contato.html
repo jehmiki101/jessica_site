@@ -6,6 +6,7 @@
 
         <!-- IMPORTAÇÕES -->
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/contato.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
         <nav id="nav-menu">
             <ul>
                 <li>
-                    <a id="menu-inicial" href="index.html">Menu</a>
+                    <a id="menu-inicial" href="index.html">Apresentação</a>
                 </li>
                 <li>
                     <a id="menu-sobremim" href="sobremim.html">Sobre Mim</a>
@@ -39,10 +40,136 @@
                 <li>
                     <a id="menu-contato" href="contato.html">Contato</a>
                 </li>
-
+            </ul>
+        </nav>
+        <!-- SUBMENU CONTATO -->
+        <nav>
+            <ul id="sub-geral-contato">
+                <li><a id="sub-contato">Contato</a></li>
+                <li><a id="sub-me-escreva">Me escreva!</a></li>
             </ul>
         </nav>
 
+        <!-- CONTEÚDO CONTATO -->
+        <div id="content-contato">
+            <p class="content-titulo">Telefone</p>
+            <br>
+            <p class="content-subtitulo">(16) 99187-6258</p>
+            <br>
+            <p class="content-titulo">Email</p>
+            <br>
+            <p class="content-subtitulo">jmikihara@gmail.com</p>
+            <br>
+            <p class="content-titulo">Endereço</p>
+            <br>
+            <p class="content-subtitulo"> São Paulo - SP - Brasil</p>
+            <br>
+            <p class="content-titulo">Linkedin</p>
+            <br>
+            <p class="content-subtitulo"><a class="content-a-subtitulo" href="https://www.linkedin.com/in/jessica-hara/">https://www.linkedin.com/in/jessica-hara/</a></p>
+            <br>
+        </div>
+
+        <!-- CONTEÚDO ME ESCREVA -->
+        <div id="content-me-escreva">
+            <label for="nome" class="content-subtitulo">Nome</label>
+            <br>
+            <input type="text" name="nome" id="content-input-nome">
+            <br>
+            <label for="email" class="content-subtitulo">Email</label>
+            <br>
+            <input type="text" name="email" id="content-input-email">
+            <br>
+            <label for="mensagem" class="content-subtitulo">Mensagem</label>
+            <br>
+            <textarea name="mensagem" id="content-input-mensagem"></textarea>
+            <button id="content-button">Enviar</button>
+
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            // declaração sub menu
+            const contato = document.getElementById("sub-contato");
+            const meEscreva = document.getElementById("sub-me-escreva");
+
+            // declaração conteúdos
+            const contentContato = document.getElementById("content-contato");
+            const contentMeEscreva = document.getElementById("content-me-escreva");
+
+            // minimizar conteúdos
+            function esconderTodos(){
+                contentContato.style.display = "none";
+                contentMeEscreva.style.display = "none";
+
+                contato.style.background = "#d6d6c9";
+                meEscreva.style.background = "#d6d6c9";
+            }
+            esconderTodos();
+            contentContato.style.display = "block";
+            contato.style.background = "#c6c6b6";
+            // evento clicável Contato
+            contato.addEventListener("click", function(){
+                const aberto = contentContato.style.display === "block";
+                esconderTodos();
+                if (!aberto){
+                    contentContato.style.display = "block";
+                    contato.style.background = "#c6c6b6";
+                }
+                else{
+                    contentContato.style.display = "none";
+                    contato.style.background = "#d6d6c9";
+                }
+            });
+            // evento clicável Me escreva
+            meEscreva.addEventListener("click", function(){
+                const aberto = contentMeEscreva.style.display === "block";
+                esconderTodos();
+                if (!aberto){
+                    contentMeEscreva.style.display = "block";
+                    meEscreva.style.background = "#c6c6b6";
+                    validaCampos();
+                }
+                else{
+                    contentMeEscreva.style.display = "none";
+                    meEscreva.style.background = "#d6d6c9";
+                }
+            });
+
+            // SUBSEÇÃO ME ESCREVA
+            const botaoEnviar = contentMeEscreva.querySelector("button");
+
+            botaoEnviar.addEventListener("click", function(event){
+                event.preventDefault();
+
+                const nome = document.querySelector(".content-input-nome");
+                const email = document.getElementById("content-input-email");
+                const mensagem = document.getElementById("content-input-mensagem");
+
+                // validar email
+                const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                // validar campos preenchidos
+                if (nome.value.trim() === "" || email.value.trim() === "" || mensagem.value.trim() === ""){
+                    alert("Por favor, preencha todos os campos antes de enviar.");
+                    return;
+                }
+
+                // validar email valido
+                if (!emailValido.test(email.value)){
+                    alert("Por favor, insira um e-mail válido (exemplo: usuario@dominio.com).");
+                    return;
+                }
+
+                // validação ok
+                alert("Mensagem enviada com sucesso!");
+
+                // limpar campos
+                nome.value = "";
+                email.value = "";
+                mensagem.value = "";
+            });
+        </script>
     </body>
     <footer>
         <div id="retangulo-footer"></div>

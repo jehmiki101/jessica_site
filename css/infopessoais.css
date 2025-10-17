@@ -1,25 +1,23 @@
 
-@media screen and (min-width:601px){
-/* SUBMENU PORTFOLIO */
-#sub-geral-portfolio{
+/* APRESENTAÇÃO */
+#sub-geral{
     display: flex;
     flex-direction: row;
     position: absolute;
     left: 30rem;
-    top: 22rem;
+    top: 11.5rem;
     gap: 1rem;
     list-style-type: none;
 }
 
-/* ABAS SUBMENU */
-#sub-github, #sub-projetos{
+#sub-info-pessoais{
     display: flex;
     width: 10rem;
     height: 2.5rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: var(--bg-medio);
+    background-color: var(--bg-escuro);
     padding: 0.7rem;
     cursor: pointer;
 
@@ -31,20 +29,20 @@
     text-align: center;
 }
 
-/* MENU PORTFOLIO */
-#menu-portfolio{
+/* SUBMENU APRESENTAÇÃO */
+#menu-inicial{
     font-family: var(--fonte-montserrat);
     color: var(--cor-fonte-escuro);
     width: 100%;
 }
 
-/* CONTEÚDO PORTFOLIO */
-#content-github, #content-projetos{
+/* CONTEUDO INFORMAÇÕES PESSOAIS */
+#content-info-pessoais{
     display: flex;
     position: absolute;
     left: 30rem;
-    top: 24.5rem;
-    height: 29.5rem;
+    top: 14rem;
+    height: 40rem;
     width: 50rem;
     background: var(--bg-escuro);
     padding: 4rem 10rem 0 2rem;
@@ -55,29 +53,32 @@
     font-weight: 500;
     font-size: 1rem;
     text-align: justify;
+    flex-direction: column;
 }
 
 .content-subtitulo{
     color: var(--cor-fonte-escuro);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
     padding-left: 1rem;
-    margin-bottom: 1rem;
-    }
+    margin-bottom: -1rem;
+}
 
-.content-a-subtitulo{
-    text-decoration: none;
+.content-content{
     color: var(--cor-fonte-escuro);
     font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
 }
 
-
-a:visited{
-    text-decoration: none;
+.content-li-content{
     color: var(--cor-fonte-escuro);
-    font-family: var(--fonte-montserrat);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 0.7rem;
+    margin-left: 3rem;
 }
-
-}
-
